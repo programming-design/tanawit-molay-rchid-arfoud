@@ -8,6 +8,20 @@ a {
   color: #000000;  
 
 }
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  align-content: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
 
 .nav-item :hover {
   color: #ff0000;
@@ -23,12 +37,11 @@ a {
   background-color: #000!important;
 }
 
-
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5);
@@ -191,7 +204,7 @@ header nav ul.action-menu .nav-item .nav-link {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 400px;
+  min-height: 258px;
   position: relative;
 }
 
